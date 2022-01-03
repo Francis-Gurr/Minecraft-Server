@@ -28,6 +28,10 @@ services:
       ENFORCE_WHITELIST: "true"
       OPS: "frannyg_"
       SPAWN_PROTECTION: "0"
+      REPLACE_ENV_VARIABLES: "true"
+      REPLACE_ENV_IN_PLACE: "true"
+      REPLACE_ENV_DURING_SYNC: "true"
+      ENV_VARIABLE_PREFIX: "DISCORD_"
       RESOURCE_PACK: "https://drive.google.com/uc?export=download&id=1RX449QtQBKLjoCLl3dw0puUF98hIOQzl"
       RESOURCE_PACK_ENFORCE: "true"
       REMOVE_OLD_MODS: "true"
@@ -45,5 +49,5 @@ services:
         /datapacks/villager_death_messages-v1.2.3.zip"
       ENABLE_RCON: "true"
       RCON_PORT: "25575"
-      RCON_PASSWORD: "test"
+      RCON_PASSWORD: "${RCON_PASSWORD}"
     restart: always
