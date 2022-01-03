@@ -21,6 +21,7 @@ Create systemd service
 
 Configure firewall
 - `sudo ufw allow 25565/tcp`
+- `sudo ufw allow 25575/tcp`
 
 Backups:
 - tbc
