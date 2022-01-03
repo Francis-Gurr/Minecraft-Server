@@ -1,0 +1,49 @@
+version: "3.8"
+
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    ports:
+      - "25565:25565"
+    volumes:
+      - "./data:/data"
+      - "./plugins:/plugins"
+      - "./datapacks:/datapacks"
+      - "./config/essentials_discord_config.yml:/data/plugins/EssentialsDiscord/config.yml"
+      - "./config/chest_cleaner_config.yml:/data/plugins/ChestCleaner/config.yml"
+    environment:
+      SERVER_NAME: "Test Server"
+      EULA: "TRUE"
+      TYPE: "PAPER"
+      MEMORY: "8G"
+      MOTD: "Testing"
+      ICON: "https://www.cctraining.uk.com/wp-content/uploads/2017/09/test.png"
+      DIFFICULTY: "normal"
+      MODE: "survival"
+      FORCE_GAMEMODE: "true"
+      MAX_PLAYERS: "15"
+      PLAYER_IDLE_TIMEOUT: "30"
+      ANNOUNCE_PLAYER_ACHIEVEMENTS: "true"
+      WHITELIST: "frannyg_,LeynaM"
+      ENFORCE_WHITELIST: "true"
+      OPS: "frannyg_"
+      SPAWN_PROTECTION: "0"
+      RESOURCE_PACK: "https://drive.google.com/uc?export=download&id=1RX449QtQBKLjoCLl3dw0puUF98hIOQzl"
+      RESOURCE_PACK_ENFORCE: "true"
+      REMOVE_OLD_MODS: "true"
+      REMOVE_OLD_DATAPACKS: "true"
+      DATAPACKS: "/datapacks/terralith-v2.0.9.zip,
+        /datapacks/vanilla_tweaks_crafting.zip,
+        /datapacks/afk_display-v1.1.2.zip,
+        /datapacks/cauldron_concrete-v2.0.5.zip,
+        /datapacks/chunk_loaders-v1.0.3.zip,
+        /datapacks/coordinates_hud-v1.2.2.zip,
+        /datapacks/custom_nether_portals-v2.3.4.zip,
+        /datapacks/larger_phantoms-v1.2.3.zip,
+        /datapacks/more_mob_heads-v2.9.4.zip,
+        /datapacks/player_head_drops-v1.1.2.zip,
+        /datapacks/villager_death_messages-v1.2.3.zip"
+      ENABLE_RCON: "true"
+      RCON_PORT: "25575"
+      RCON_PASSWORD: "test"
+    restart: always
