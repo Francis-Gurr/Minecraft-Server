@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   minecraft:
-    image: itzg/minecraft-server
+    image: itzg/minecraft-server:latest
     ports:
       - "25565:25565"
     volumes:
@@ -10,6 +10,7 @@ services:
       - "./plugins:/plugins"
       - "./datapacks:/datapacks"
       - "./config/chest_cleaner_config.yml:/data/plugins/ChestCleaner/config.yml"
+      - "./config/essentials_discord_config.yml:/data/plugins/EssentialsDiscord/config.yml"
     environment:
       SERVER_NAME: "Ourcraft"
       EULA: "TRUE"
@@ -19,13 +20,15 @@ services:
       OVERRIDE_ICON: "TRUE"
       ICON: "https://cdna.artstation.com/p/assets/images/images/037/831/198/large/mark-galbraith-minecraftbee.jpg"
       OVERRIDE_SERVER_PROPERTIES: "TRUE"
+      SEED: "-1145055443261744142"
+      VIEW_DISTANCE: "16"
       DIFFICULTY: "normal"
       MODE: "survival"
       FORCE_GAMEMODE: "TRUE"
       MAX_PLAYERS: "15"
       PLAYER_IDLE_TIMEOUT: "30"
       ANNOUNCE_PLAYER_ACHIEVEMENTS: "TRUE"
-      WHITELIST: "frannyg_,LeynaM"
+      WHITELIST: "frannyg_,LeynaM,Jack_Pear"
       ENFORCE_WHITELIST: "TRUE"
       OPS: "frannyg_"
       SPAWN_PROTECTION: "0"
@@ -42,17 +45,15 @@ services:
       RESOURCE_PACK_ENFORCE: "TRUE"
       REMOVE_OLD_MODS: "TRUE"
       REMOVE_OLD_DATAPACKS: "TRUE"
-      DATAPACKS: "/datapacks/terralith-v2.0.9.zip,
+      DATAPACKS: "/datapacks/terralith-v2.0.12.zip,
         /datapacks/vanilla_tweaks_crafting.zip,
         /datapacks/afk_display-v1.1.2.zip,
-        /datapacks/cauldron_concrete-v2.0.5.zip,
         /datapacks/chunk_loaders-v1.0.3.zip,
         /datapacks/coordinates_hud-v1.2.2.zip,
         /datapacks/custom_nether_portals-v2.3.4.zip,
         /datapacks/larger_phantoms-v1.2.3.zip,
-        /datapacks/more_mob_heads-v2.9.4.zip,
-        /datapacks/player_head_drops-v1.1.2.zip,
-        /datapacks/villager_death_messages-v1.2.3.zip"
+        /datapacks/more_mob_heads-v2.9.4.fg.zip,
+        /datapacks/player_head_drops-v1.1.2.zip"
       ENABLE_RCON: "TRUE"
       RCON_PORT: "25575"
       RCON_PASSWORD: "${RCON_PASSWORD}"

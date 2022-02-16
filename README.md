@@ -1,10 +1,11 @@
 # Minecraft-Server
 
+NB:
+In order for secrets not to be uploaded to git: `git update-index --assume-unchanged config/essentials_discord_config.yml`
+To undo: `git update-index --no-assume-unchanged config/essentials_discord_config.yml`
+
 Initialise server and add docker config:
 - Create env file
-- `docker-compose up`
-- `cp config/essentials_discord_config.yml data/plugins/EssentialsDiscord/config.yml`
-- `docker-compose down`
 
 Reload world gen with terralith
 - `docker-compose up`
@@ -22,6 +23,9 @@ Create systemd service
 Configure firewall
 - `sudo ufw allow 25565/tcp`
 - `sudo ufw allow 25575/tcp`
+
+Configure sorting permissions
+- `lp group default permission set chestcleaner.clicksort true`
 
 Backups:
 - tbc
