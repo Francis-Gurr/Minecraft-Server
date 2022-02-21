@@ -20,7 +20,7 @@ services:
       OVERRIDE_ICON: "TRUE"
       ICON: "https://cdna.artstation.com/p/assets/images/images/037/831/198/large/mark-galbraith-minecraftbee.jpg"
       OVERRIDE_SERVER_PROPERTIES: "TRUE"
-      SEED: "-1145055443261744142"
+      SEED: "3730784288373098496"
       VIEW_DISTANCE: "16"
       DIFFICULTY: "normal"
       MODE: "survival"
@@ -45,7 +45,7 @@ services:
       RESOURCE_PACK_ENFORCE: "TRUE"
       REMOVE_OLD_MODS: "TRUE"
       REMOVE_OLD_DATAPACKS: "TRUE"
-      DATAPACKS: "/datapacks/terralith-v2.0.12.zip,
+      DATAPACKS: "/datapacks/Terralith_v2.0.12a_Seed_3730784288373098496.zip,
         /datapacks/vanilla_tweaks_crafting.zip,
         /datapacks/afk_display-v1.1.2.zip,
         /datapacks/chunk_loaders-v1.0.3.zip,
