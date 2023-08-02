@@ -7,15 +7,12 @@ services:
       - "25565:25565"
     volumes:
       - "./data:/data"
-      - "./plugins:/plugins"
-      - "./datapacks:/datapacks"
-      - "./config/chest_cleaner_config.yml:/data/plugins/ChestCleaner/config.yml"
-      - "./config/essentials_discord_config.yml:/data/plugins/EssentialsDiscord/config.yml"
+      - "./mods:/mods"
     environment:
       SERVER_NAME: "Ourcraft"
       EULA: "TRUE"
-      TYPE: "PAPER"
-      PAPER_DOWNLOAD_URL: "https://drive.google.com/uc?export=download&id=1QmKLkrK9ilHBVsnBWbP54gnpaKiYU815"
+      TYPE: "FABRIC"
+      VERSION: "1.20.1"
       MEMORY: "8G"
       MOTD: "Welcome to ourcraft server!"
       OVERRIDE_ICON: "TRUE"
@@ -33,30 +30,15 @@ services:
       ENFORCE_WHITELIST: "TRUE"
       OPS: "frannyg_"
       SPAWN_PROTECTION: "0"
-      REPLACE_ENV_VARIABLES: "TRUE"
-      REPLACE_ENV_IN_PLACE: "TRUE"
-      REPLACE_ENV_DURING_SYNC: "TRUE"
-      ENV_VARIABLE_PREFIX: "DISCORD_"
-      DISCORD_TOKEN: "${DISCORD_TOKEN}"
-      DISCORD_GUILD: "${DISCORD_GUILD}"
-      DISCORD_URL: "${DISCORD_URL}"
-      DISCORD_PRIMARY: "${DISCORD_PRIMARY}"
-      DISCORD_CONSOLE_CHANNEL: "${DISCORD_CONSOLE_CHANNEL}"
-      RESOURCE_PACK: "https://drive.google.com/uc?export=download&id=1RX449QtQBKLjoCLl3dw0puUF98hIOQzl"
+      RESOURCE_PACK: "https://drive.google.com/uc?export=download&id=1Tbr7mY2iE6yWnkkdzfl5BXYmdJgdB-e6" # Resource Pack: https://vanillatweaks.net/share#3wo9Wq
       RESOURCE_PACK_ENFORCE: "TRUE"
+      VANILLATWEAKS_SHARECODE: "SDS4bp,jv7TBK" # Datapacks: https://vanillatweaks.net/share#SDS4bp, Crafting Tweaks: https://vanillatweaks.net/share#jv7TBK
+      MODS_FILE: "/mods/mods.txt"
       REMOVE_OLD_MODS: "TRUE"
       REMOVE_OLD_DATAPACKS: "TRUE"
-      DATAPACKS: "/datapacks/Terralith_v2.0.12a_Seed_3730784288373098496.zip,
-        /datapacks/vanilla_tweaks_crafting.zip,
-        /datapacks/afk_display-v1.1.2.zip,
-        /datapacks/chunk_loaders-v1.0.3.zip,
-        /datapacks/coordinates_hud-v1.2.2.zip,
-        /datapacks/custom_nether_portals-v2.3.4.zip,
-        /datapacks/larger_phantoms-v1.2.3.zip,
-        /datapacks/more_mob_heads-v2.9.4.fg.zip,
-        /datapacks/player_head_drops-v1.1.2.zip"
       ENABLE_RCON: "TRUE"
       RCON_PORT: "25575"
       RCON_PASSWORD: "${RCON_PASSWORD}"
       MAX_TICK_TIME: "-1"
+      STOP_SERVER_ANNOUNCE_DELAY: "120"
     restart: always
