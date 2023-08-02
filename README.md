@@ -15,5 +15,5 @@ Create systemd service
 
 Client instructions
 - Pre-requisites: Java and Python3 
-- Download `ourcraft-client-installer.py`
+- Download `ourcraft-client-installer.py` from https://drive.google.com/uc?export=download&id=1prSZs6IHItvbsdyMQ7GqbmOydLxtMr7P
 - Place inside an empty folder and run the script
