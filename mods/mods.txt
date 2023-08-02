@@ -1,0 +1,21 @@
+# PERFORMANCE AND OPTIMISATION
+#
+# Lithium - https://modrinth.com/mod/lithium
+https://cdn.modrinth.com/data/gvQqBUqZ/versions/ZSNsJrPI/lithium-fabric-mc1.20.1-0.11.2.jar
+#
+# Phosphor (not available for 1.20.1 yet) - https://modrinth.com/mod/phosphor
+#
+###################################################################################################
+# NEW ITEMS
+#
+# Map Atlases - https://modrinth.com/mod/map-atlases
+https://cdn.modrinth.com/data/C255PPUX/versions/e9Az4uaX/map-atlases-2.6.0%2B1.20.1.jar
+#
+###################################################################################################
+# DEPENDENCIES
+#
+# Fabric API (Map Atlases) - https://modrinth.com/mod/fabric-api
+https://cdn.modrinth.com/data/P7dR8mSH/versions/XheZ9iGK/fabric-api-0.86.1%2B1.20.1.jar
+#
+# Cloth Config API (Map Atlases) - https://modrinth.com/mod/cloth-config/
+https://cdn.modrinth.com/data/9s6osm5g/versions/s7VTKfLA/cloth-config-11.1.106-fabric.jar
