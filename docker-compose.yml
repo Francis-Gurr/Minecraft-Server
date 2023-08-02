@@ -28,9 +28,8 @@ services:
       ANNOUNCE_PLAYER_ACHIEVEMENTS: "TRUE"
       WHITELIST: "frannyg_,LeynaM,Jack_Pear,TiaWM"
       ENFORCE_WHITELIST: "TRUE"
-      OPS: "frannyg_"
       SPAWN_PROTECTION: "0"
-      RESOURCE_PACK: "https://drive.google.com/uc?export=download&id=1Tbr7mY2iE6yWnkkdzfl5BXYmdJgdB-e6" # Resource Pack: https://vanillatweaks.net/share#3wo9Wq
+      RESOURCE_PACK: "https://drive.google.com/uc?export=download&id=1Tbr7mY2iE6yWnkkdzfl5BXYmdJgdB-e6" # Resource Pack: https://vanillatweaks.net/share#fTrSL4
       RESOURCE_PACK_ENFORCE: "TRUE"
       VANILLATWEAKS_SHARECODE: "SDS4bp,jv7TBK" # Datapacks: https://vanillatweaks.net/share#SDS4bp, Crafting Tweaks: https://vanillatweaks.net/share#jv7TBK
       MODS_FILE: "/mods/mods.txt"

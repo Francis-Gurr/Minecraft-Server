@@ -7,11 +7,11 @@ Start docker
 - `sudo docker-compose up`
 
 Create systemd service
-- `cp config/minecraft-docker.service /etc/systemd/system/minecraft-docker.service`
+- `sudo cp minecraft-docker.service /etc/systemd/system/minecraft-docker.service`
 - `sudo systemctl daemon-reload`
 - `sudo systemctl start minecraft-docker`
 - `sudo systemctl status minecraft-docker`
-- `sudo sytemctl enable minecraft-docker`
+- `sudo systemctl enable minecraft-docker`
 
 Client instructions
 - Pre-requisites: Java and Python3 
